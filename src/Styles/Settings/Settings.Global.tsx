@@ -14,6 +14,8 @@ export const CSS_GLOBAL = {
   fontSizeLarge: rem('20px'),
   fontSizeXL: rem('22px'),
 
+  borderRadius: rem('3px'),
+
   p0: rem('0px'),
   p1: rem('8px'),
   p2: rem('16px'),

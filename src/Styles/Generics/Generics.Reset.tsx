@@ -1,3 +1,4 @@
+import { COLORS } from '../Settings/Settings.Colors'
 import { CSS_GLOBAL } from '../Settings/Settings.Global'
 import { createGlobalStyle } from 'styled-components'
 import { rem } from 'polished'
@@ -49,6 +50,7 @@ export const GReset = createGlobalStyle`
 
   /* Overwrites */
   body {
+    color: ${COLORS.colorBlackText};
     font-family: ${CSS_GLOBAL.fontFamily};
     font-size: ${CSS_GLOBAL.fontSizeRegular};
     font-weight: ${CSS_GLOBAL.fontWeightRegular};

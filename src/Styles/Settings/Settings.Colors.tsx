@@ -13,5 +13,11 @@ export const COLORS = {
   colorWhiteTextHint: 'rgba(255, 255, 255, 0.3)',
   colorWhiteIcons: '#FFF',
   colorWhiteDisabled: 'rgba(255, 255, 255, 0.3)',
-  colorWhiteDividers: 'rgba(255, 255, 255, 0.12)'
+  colorWhiteDividers: 'rgba(255, 255, 255, 0.12)',
+
+  colorAccentGreen: '#00cec9',
+  colorAccentBlue: '#0984e3',
+  colorAccentYellow: '#fdcb6e',
+  colorAccentRed: '#d63031',
+  colorAccentGrey: '#2d3436'
 }

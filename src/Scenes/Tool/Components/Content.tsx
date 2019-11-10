@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { darken, lighten } from 'polished'
 
 import { ABtn } from '../../../Styles/Atoms/Atoms.Buttons'
+import { AInput } from '../../../Styles/Atoms/Atoms.Inputs'
 import { CSS_GLOBAL } from '../../../Styles/Settings/Settings.Global'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { EBox } from '../../../Styles/Elements/Elements.Box'
@@ -9,14 +10,18 @@ import { EText } from '../../../Styles/Elements/Elements.Text'
 import { STL } from '../Styles/Tool.Styles'
 
 export default function Content() {
-  const [color, setColor] = useState(['#FFF'])
+  const [color, setColor] = useState(['#00cec9'])
   const shade = ['Lighten', 'Darken']
 
   return (
-    <EBox paddingY={CSS_GLOBAL.p10}>
+    <EBox>
+      <EBox mb={CSS_GLOBAL.p5}>
+        <AInput value={color} onChange={e => setColor([e.target.value])} />
+      </EBox>
+
       {shade.map((s, i) => (
         <Fragment key={i}>
-          <EText as="h3">{s}</EText>
+          <EText as="h5">{s}</EText>
 
           <EBox mb={CSS_GLOBAL.p4}>
             {color.map((c, i) => (
@@ -32,7 +37,7 @@ export default function Content() {
 
                   return (
                     <STL.Item key={i} background={color} display="flex">
-                      <CopyToClipboard>
+                      <CopyToClipboard text={c}>
                         <ABtn.Ghost display="flex" flex="1" position="relative">
                           <STL.IconCopy />
 

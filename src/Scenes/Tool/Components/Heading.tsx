@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Heading() {
   return (
-    <EBox textAlign="center">
+    <EBox textAlign="center" mb={CSS_GLOBAL.p10}>
       <EText as="h1" fontWeight={CSS_GLOBAL.fontWeightBold}>
         Shade{' '}
         <span role="img" aria-label="shade emoji">
