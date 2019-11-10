@@ -10,7 +10,9 @@ export const CSS_GLOBAL = {
 
   fontSizeRegular: rem('18px'),
   fontSizeSmall: rem('16px'),
+  fontSizeXS: rem('14px'),
   fontSizeLarge: rem('20px'),
+  fontSizeXL: rem('22px'),
 
   p0: rem('0px'),
   p1: rem('8px'),
