@@ -2,9 +2,12 @@ import { COLORS } from '../../../Styles/Settings/Settings.Colors'
 import { Copy } from 'styled-icons/boxicons-regular'
 import { EBox } from '../../../Styles/Elements/Elements.Box'
 import { EText } from '../../../Styles/Elements/Elements.Text'
+import { rem } from 'polished'
 import styled from 'styled-components'
 
 const Item = styled(EBox)`
+  max-height: ${rem('150px')};
+
   ::before {
     content: '';
     display: inline-block;
